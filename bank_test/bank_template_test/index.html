@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BapEr Bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+}
+    </style>
   </head>
   <body>
     <header>
@@ -38,7 +45,7 @@
             <div class="ml-8">
               <input
                 class="block mb-3 w-3/4 px-2 py-2 rounded-md mt-8"
-                type="text"
+                type="number"
                 name=""
                 id="deposit-field"
                 placeholder="$ Amount you want to deposit"
@@ -57,10 +64,10 @@
             <div class="ml-8">
               <input
                 class="block mb-3 w-3/4 px-2 py-2 rounded-md mt-8"
-                type="text"
-                name=""
+                type="number"
                 id="withdraw-field"
                 placeholder="$ Amount you want to Withdraw"
+                
               />
               <button
                 id="withdraw-btn"
@@ -80,3 +87,4 @@
     <script src="./js/withdraw.js"></script>
   </body>
 </html>
+

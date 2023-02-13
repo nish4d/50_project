@@ -1,6 +1,6 @@
 document.getElementById('deposit-btn').addEventListener('click', function(){
     const depositField = takeInput('deposit-field');
-    if(isNaN(depositField)){
+    if(isNaN(depositField) || depositField <= 0){
         alert('Please enter a valid number');
         return;
     }

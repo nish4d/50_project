@@ -1,6 +1,6 @@
 document.getElementById('withdraw-btn').addEventListener('click', function(){
     const withdrawField = takeInput('withdraw-field');
-    if(isNaN(withdrawField)){
+    if(isNaN(withdrawField) || withdrawField <= 0){
         alert('Please enter a valid number');
         return;
     }

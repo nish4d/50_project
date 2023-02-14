@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Discount Chart v2</title>
+  </head>
+  <body class="bg-slate-700">
+    <head>
+      <h2 class="text-5xl font-semibold text-center text-amber-500 mt-12">
+        My Text Editor
+      </h2>
+    </head>
+    <main>
+      <div
+        class="w-2/3 bg-slate-600 mx-auto mt-12 p-12 rounded-xl"
+      >
+      <div>
+        <nav class="flex justify-between items-center">
+            <div>
+                <button id="bold" class="bg-slate-300 px-4 rounded-sm mb-2">B</button>
+                <button id="italic" class="bg-slate-300 px-4 rounded-sm mb-2"><i>I</i></button>
+                <button id="underline" class="bg-slate-300 px-4 rounded-sm mb-2">U</button>
+            </div>
+            <div>
+                <button id="left" class="bg-slate-300 px-4 rounded-sm mb-2">L</button>
+                <button id="right" class="bg-slate-300 px-4 rounded-sm mb-2">R</button>
+                <button id="center" class="bg-slate-300 px-4 rounded-sm mb-2">M</button>
+                <button id="justify" class="bg-slate-300 px-4 rounded-sm mb-2">SM</button>
+            </div>
+            <div>
+                <div class="inline-block">
+                    <input  type="number" class="bg-slate-300 rounded-sm mb-2 pl-2"  name="" id="sizes" value="16" min="1" max="100">
+                </div>
+                <button id="uppercase" class="bg-slate-300 px-4 rounded-sm mb-2">a/A</button>
+                <input type="color" class="" name="" id="colors">
+            </div>
+        </nav>
+        <hr>
+        <br>
+        <div class="text-center">
+            <textarea id="text-area" class="rounded-md p-2 w-2/3 h-60" name="" cols="70" rows="10"></textarea>
+        </div>
+      </div>
+        
+      </div>
+    </main>
+    <!-- js -->
+    <script src="./js/text_editor.js"></script>
+  </body>
+</html>

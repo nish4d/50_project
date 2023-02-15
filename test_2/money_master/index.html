@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <head>
+      <h1 class="text-center text-4xl font-bold mt-8">Money Master</h1>
+    </head>
+    <main>
+      <section class="grid md:grid-cols-2 m-12 p-12 gap-12">
+        <div>
+          <img
+            class="w-full h-full rounded-md"
+            src="./img/doller_1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="text-center space-y-4">
+          <h2 class="text-2xl font-semibold">Income</h2>
+          <p>
+            income:
+            <input
+            id="income"
+              type="text"
+              value="10000"
+              class="input input-bordered input-secondary w-full max-w-xs"
+            />
+          </p>
+          <h2 class="text-2xl font-semibold">Express</h2>
+          <p>
+            Food:
+            <input
+              id="current-food"
+              type="text"
+              class="input input-bordered input-secondary w-full max-w-xs"
+            />
+          </p>
+          <p>
+            Rent:
+            <input
+              id="current-rent"
+              type="text"
+              class="input input-bordered input-secondary w-full max-w-xs"
+            />
+          </p>
+          <p>
+            Clothes:
+            <input
+              id="current-cloth"
+              type="text"
+              class="input input-bordered input-secondary w-full max-w-xs"
+            />
+          </p>
+          <button id="btn-calculate" class="btn btn-accent">Calculate</button>
+          <h2 class="text-2xl font-semibold">
+            Total Express: <span id="total-express">00</span>
+          </h2>
+          <h2 class="text-2xl font-semibold">Balance: <span id="balance-value">00</span></h2>
+          <p>
+            Save:
+            <input
+            id="save-input"
+              type="text"
+              class="input input-bordered input-secondary w-full max-w-xs"
+            />
+            % <button id="btn-save" class="btn btn-accent">save</button>
+          </p>
+          <p class="text-2xl font-semibold">Saving Amount: <span id="saving-value">00</span></p>
+          <p class="text-2xl font-semibold">
+            Remaining Balance: <span id="remaining-value">00</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- js -->
+    <script src="./js/money.js"></script>
+  </body>
+</html>

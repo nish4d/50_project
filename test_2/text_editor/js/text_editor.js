@@ -62,7 +62,7 @@ document.getElementById('justify').addEventListener('click', function(){
     }
     
 })
-document.getElementById('colors').addEventListener('change', function(e){
+document.getElementById('colors').addEventListener('input', function(e){
     // alert('color')
     const color = document.getElementById('colors').value;
 //    let val= e.value;

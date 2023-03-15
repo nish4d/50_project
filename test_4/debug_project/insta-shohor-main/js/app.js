@@ -17,9 +17,17 @@ const isLiked = (id) => {
 
 const addToLiked = (id) => {
 
-      likedPostsId.push(id);
+    //   likedPostsId.push(id);
 
-    showPosts(posts);
+    // showPosts(posts);
+    const index = likedPostsId.indexOf(id); 
+    if (index === -1) {
+      likedPostsId.push(id);
+      showPosts(posts);
+    } else{
+      likedPostsId.splice(index);
+      showPosts(posts);
+    }
 };
 
 const reportPost = (id) => {
